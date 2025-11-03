@@ -66,3 +66,21 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1");
+/* @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Filled"); */
+@import "tailwindcss";
+
+@layer base {
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+  /* background-color:#fafafa; */
+  /* or; */
+  background-color: oklch(98.5% 0 0);
+
+}
+}

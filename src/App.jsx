@@ -1,12 +1,15 @@
-
+import { Routes,Route } from 'react-router-dom'
 import './App.css'
+import { Home } from './pages/Home'
+import { Archive } from './pages/Archive'
 
 function App() {
 
   return (
-    <>
-     <h1 className='underline'>Notes</h1>
-    </>
+    <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/archive' element={<Archive/>}/>
+    </Routes>
   )
 }
 
