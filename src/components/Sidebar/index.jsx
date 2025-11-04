@@ -19,10 +19,8 @@ export const SideBar = () => {
           <span>Archive</span>
         </NavLink>
         <NavLink className={getStyles} to={"/important"}>
-          <span className="material-symbols-outlined">
             <span className="material-symbols-outlined">label_important</span>
-          </span>
-          <span>Important</span>
+            <span>Important</span>
         </NavLink>
         <NavLink className={getStyles} to={"/bin"}>
           <span className="material-symbols-outlined">delete</span>

@@ -5,7 +5,7 @@ import { SideBar } from "../../components/Sidebar";
 import { NotesCard } from "../../components/NotesCard";
 import { useNotes } from "../../context/notes-context";
 export const Home = () => {
-  const { title, text, notes, archive, notesDispatch } = useNotes();
+  const { title, text, notes, archive,important, notesDispatch,bin } = useNotes();
 
   const onTitleChange = (e) => {
     notesDispatch({
@@ -29,7 +29,9 @@ export const Home = () => {
   };
 
   console.log(notes);
-  console.log(archive);
+  // console.log(archive);
+  // console.log(important);
+  console.log(bin);
 
   const pinnedNotes =
     notes?.length > 0 && notes.filter(({ isPinned }) => isPinned);
