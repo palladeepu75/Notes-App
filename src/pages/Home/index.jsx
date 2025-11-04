@@ -28,10 +28,10 @@ export const Home = () => {
     });
   };
 
-  console.log(notes);
+  // console.log(notes);
   // console.log(archive);
   // console.log(important);
-  console.log(bin);
+  // console.log(bin);
 
   const pinnedNotes =
     notes?.length > 0 && notes.filter(({ isPinned }) => isPinned);
